@@ -1,0 +1,10 @@
+<h1>Teste Cloudinary</h1>
+
+<%= link_to "Novo usuario", new_user_path %>
+
+<%	@users.each do |user| %>
+	<p>
+		<%= user.name %>
+		<%= image_tag user.avatar %>
+	</p>
+<% end %>

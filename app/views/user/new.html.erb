@@ -1,0 +1,11 @@
+<h1>Novo usuario</h1>
+
+<%= form_for :user do |new_user| %>
+	<p>Nome</p>
+	<%= new_user.text_field :name %>
+
+	<p>Avatar</p>
+	<%= new_user.file_field :avatar %><br>
+
+	<%= new_user.submit "Enviar" %>
+<% end %>
